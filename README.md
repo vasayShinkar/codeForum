@@ -19,7 +19,7 @@ docker compose up -d
 ```
 then run command to download dependencies 
 ```bash
-docker exec -it frontend npm run dev
+docker exec -it frontend npm install
 ```
 then restart docker and enjoy!
 ```bash
