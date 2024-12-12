@@ -1,0 +1,30 @@
+version: "3.0"
+services:
+  application:
+    container_name: frontend
+    image: node:lts-alpine
+    ports:
+      - 3000:3000
+    working_dir: /home/node/application
+    volumes:
+      - ./code:/home/node/
+    depends_on:
+      - backend
+    command: "npm run dev"
+    tty: true
+
+  backend:
+    container_name: bd
+    image: mongo:latest
+    restart: always
+    environment:
+      DB_NAME: amperage
+      MONGO_INITDB_DATABASE: amperage
+    ports:
+      - 27017:27017
+    volumes:
+      - ./.docker/mongo/seed-mongodb.js:/docker-entrypoint-initdb.d/seed-mongodb.js
+      - mongo_db_container:/data/db
+
+volumes:
+  mongo_db_container:
