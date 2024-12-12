@@ -29,7 +29,7 @@ docker compose restart
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## How it looks like?
-![how it looks like]([example.com/logo.png](https://github.com/vasayShinkar/codeForum/blob/main/code/%D1%84%D0%BE%D1%82%D0%BE.png))
+![how it looks like](https://github.com/vasayShinkar/codeForum/blob/main/code/%D1%84%D0%BE%D1%82%D0%BE.png)
 
 
 
