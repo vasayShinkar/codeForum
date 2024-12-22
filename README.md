@@ -11,6 +11,8 @@ This project was created so that programmers could post articles about their int
 *  `docker` - to create microservices, one of which will store data for mongo db
 *  `graphql` - To get data from the API and transfer it to the application
 *  `tailwind` - To stylize our app
+*  `React hook form` - To get typed data from form.
+
 
 ## How run project?
 run this command in the console
